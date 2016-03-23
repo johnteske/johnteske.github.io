@@ -5,10 +5,8 @@
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    background: $footer-color;
+    // Positioning context for the mobile navigation icon
+    position: relative;
 }
 
 .site-title {
@@ -46,7 +44,7 @@
         position: absolute;
         top: 9px;
         right: 15px; // 30px
-        background-color: $footer-color; //$background-color;
+        background-color: $background-color;
         border: 0;
         border-radius: 5px;
         text-align: right;
@@ -168,9 +166,7 @@ footer .col {
 //Page content
 //
 .page-content {
-    padding: 0;
-    // padding: $spacing-unit 0;
-    padding-top: 56px + $spacing-unit; // SAME AS HEADER
+    padding: $spacing-unit 0 0 0;
 }
 
 .page-heading {
