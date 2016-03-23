@@ -1,0 +1,183 @@
+{
+    "basics": {
+        "name": "John Teske",
+        "label": "HTML Email and Front End Developer / Composer",
+        "picture": "http://www.johnteskemusic.com/images/teske-600p-sq.jpg",
+        "email": "john.teske@gmail.com",
+        "phone": "",
+        "website": "",
+        "summary": "HTML Email and Front End Developer",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Seattle",
+            "countryCode": "US",
+            "region": "Washington"
+        },
+    "profiles": [
+            {
+                "network": "GitHub",
+                "username": "johnteske",
+                "url": "https://github.com/johnteske"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "johndteske",
+                "url": "https://www.linkedin.com/in/johndteske"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Frye Art Museum",
+            "position": "Digital Media Manager",
+            "website": "http://fryemuseum.org",
+            "startDate": "2015-02-09",
+            "summary": "
+                Add functionality to main website using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
+                Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
+                Manage major web development projects with contract developers.
+                Design and code HTML email marketing campaigns.
+                Refine email development workflow and consistency of code through custom Grunt task runner.
+                Create digital signage content to display exhibition, program, and membership information to museum visitors.
+                Edit and publish content to website and microsites, media sites such as YouTube, SoundCloud, and Vimeo, and social media platforms including Facebook, Twitter, and Instagram.
+                Apply SEO best practices and monitor website and email analytics.
+                "
+        },
+        {
+            "company": "John Teske Music",
+            "position": "Composer",
+            "website": "http://fryemuseum.org",
+            "startDate": "2003-09-01",
+            "summary": "
+                Compose and produce music with an emphasis on listener experience and environment.
+                Design web and print media, including flyers, handbills, social media content, and website.
+                Document and edit audio, photos, and video.
+                Develop custom software tools and interfaces for music production and research.
+                "
+        },
+        {
+            "company": "Frye Art Museum",
+            "position": "Lead Audio Visual Technician and Facilities Associate",
+            "website": "http://fryemuseum.org",
+            "startDate": "2013-06-01",
+            "endDate": "2015-02-08",
+            "summary": "
+                Coproduced high quality cultural experiences with presenters and museum staff.
+                Managed contract event technicians and advised exhibitions department on audio design for gallery shows.
+                Optimized and enhanced presentation and audience experience through content formatting and customer service.
+                Performed regular gallery maintenance as Facilities Associate.
+                "
+        },
+        {
+            "company": "Montlake Bicycle Shop",
+            "position": "Mechanic",
+            "website": "#",
+            "startDate": "2011-05-01",
+            "endDate": "2013-05-01",
+            "summary": "
+                Developed personalized solutions for customers, from budget repair and maintenance to building new bikes with custom part kits.
+                Designed and built storage and display solutions after remodel, advised on website and visual design overhaul.
+                "
+        },
+        {
+            "company": "Frye Art Museum",
+            "position": "Event Technician (contractor)",
+            "website": "http://fryemuseum.org",
+            "startDate": "2009-08-01",
+            "endDate": "2013-05-31",
+            "summary": "
+                Facilitated the production of concerts, lectures, and film screenings.
+                Operated audio/visual equipment, designed and hung custom lighting for exhibition opening events.
+                "
+        },
+        {
+            "company": "Gregg's Greenlake Cycles",
+            "position": "Mechanic",
+            "website": "",
+            "startDate": "2009-05-01",
+            "endDate": "2011-03-31",
+            "summary": "
+                In addition to regular service tasks, assisted in the development of a more user-centered customer service structure.
+                "
+        },
+        {
+            "company": "Seattle Chamber Music Society",
+            "position": "Education and Operations Manager",
+            "website": "",
+            "startDate": "2008-02-01",
+            "endDate": "2009-06-30",
+            "summary": "
+                Developed and coordinated education and outreach programs, managed administrative and concert operations, designed digital and print materials, maintained and optimized website, provided in-office IT support.
+                "
+        },
+        {
+            "company": "Gregg's Greenlake Cycles",
+            "position": "Mechanic",
+            "website": "",
+            "startDate": "2006-08-01",
+            "endDate": "2008-04-30",
+            "summary": ""
+        },
+        {
+            "company": "University of Washington School of Art",
+            "position": "Media Assistant",
+            "website": "",
+            "startDate": "2004-02-01",
+            "endDate": "2006-08-30",
+            "summary": ""
+        },
+    ],
+    "education": [
+        {
+            "institution": "University of Washington",
+            "area": "Music in Composition",
+            "studyType": "Bachelor",
+            "startDate": "2003-09-01",
+            "endDate": "2007-06-01",
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "SASS",
+                "JavaScript",
+                "jQuery",
+                "PHP"
+            ]
+        },
+        {
+            "name": "CMS and Workflow",
+            "level": "",
+            "keywords": [
+                "Git",
+                "Grunt",
+                "Wordpress",
+                "ExpressionEngine",
+                "Liquid",
+                "Tumblr"
+            ]
+        },
+        {
+            "name": "Software and Web apps",
+            "level": "",
+            "keywords": [
+                "Adobe Creative Cloud",
+                "Final Cut Pro",
+                "Microsoft Office",
+                "digital audio workstations",
+                "social media platforms"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        }
+    ]
+}

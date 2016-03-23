@@ -1,0 +1,53 @@
+-
+    project: HTML Email Development
+    company: Frye Art Museum
+    link:
+        title: View fmail-dev repository on GitHub
+        url: "https://github.com/johnteske/fmail-dev"
+    images:
+        - "151019-week-in-genius-crop.jpg"
+    challenges:
+        - limited Email Service Provider (no embedded stylesheets, no Outlook-conditional styles)
+        - no standards or central repository of code and styles
+        - almost all emails coded by hand, CSS inlined manually
+    solutions:
+        - streamlined development workflow with Grunt
+        - standardized layouts with Handlebars templates
+        - standardized styles with SASS
+        - created new 'Week in Genius' layout, a weekly summary of past and upcoming activities as part of the <em>Genius / 21 Century / Seattle</em> exhibition
+
+-
+    project: Frye Art Museum store
+    company: Frye Art Museum
+    link:
+        title: View site
+        url: "http://store.fryemuseum.org"
+    images:
+        - "store-fryemuseum-org-home.jpg"
+        - "store-fryemuseum-org-collections-wear.jpg"
+    challenges:
+        - model after fryemuseum.org design to match organization styles while retaining a unique store identity and ecommerce functionality
+        - space to promote events and designers
+        - make new and custom features easy to use for staff
+    solutions:
+        - designed and developed Shopify site, based on fryemuseum.org design and brand guidelines
+        - created custom homepage module that surfaces upcoming events and designer feature blog posts
+        - built out custom control panel options to allow easy control over homepage content
+
+-
+    project: "<em>Genius / 21 Century / Seattle</em> microsite"
+    company: Frye Art Museum
+    link:
+        title: View site
+        url: "http://genius.fryemuseum.org"
+    images:
+        - "10.25.2015_marya_sea_kaminski_performance2-crop.jpg"
+    challenges:
+        - design a site that reflects the dynamic and ever-evolving nature of the exhibition
+        - allow for many types of content to be posted from the wide range of art forms and programming in the exhibition
+        - encourage social media sharing and comments
+    solutions:
+        - coordinated with Schema, who designed and developed site on Tumblr
+        - wrote jQuery scripts to help dynamically link content across posts and static pages
+        - created Jekyll static site generator to help manage content across a large number of static pages and to reduce mistakes when copy-pasting into Tumblr
+        - made performance improvements, including compressing assets

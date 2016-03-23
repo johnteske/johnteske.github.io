@@ -1,0 +1,68 @@
+{% assign resume = site.data.resume %}
+
+<div class="resume col-wrapper">
+    <div class="col col-67">
+        <h4>Experience</h4>
+        <ul>
+            {% for item in resume.work %}
+            <li>
+                <p>
+                    <strong>{{ item.position }}</strong>, {{ item.company }}<br />
+                    {% if item.endDate %}
+                        {{ item.startDate | date: '%B %Y' }}&ndash;{{ item.endDate | date: '%B %Y' }}
+                    {% else %}
+                        {{ item.startDate | date: '%B %Y' }}&ndash;Present
+                    {% endif %}
+                </p>
+                <p>{{ item.summary }}</p>
+                {% comment %}<!--
+                <ul>
+                    {% for hlite in item.highlights %}
+                    <li>{{ hlite }}</li>
+                    {% endfor %}
+                </ul>
+                -->{% endcomment %}
+            </li>
+            {% endfor %}
+        </ul>
+
+        {% comment %}<!-- VOLUNTEER -->{% endcomment %}
+
+        <h4>Education</h4>
+        <ul>
+            {% for item in resume.education %}
+            <li>
+                {{ item.institution }}<br />
+                {{ item.studyType }} of {{ item.area }}, {{ item.endDate | date: '%Y' }}
+            </li>
+            {% endfor %}
+        </ul>
+
+        {% comment %}<!-- AWARDS -->{% endcomment %}
+        {% comment %}<!-- PUBLICATIONS -->{% endcomment %}
+        {% comment %}<!-- LANGUAGES -->{% endcomment %}
+        {% comment %}<!-- INTERESTS -->{% endcomment %}
+        {% comment %}<!-- REFERENCES -->{% endcomment %}
+
+        <p>
+            <a class="small grey" href="https://jsonresume.org/">Built with JSON Resume standard</a>
+        </p>
+
+    </div>
+    <div class="col col-33">
+        <h4>Skills</h4>
+        <ul>
+            {% for item in resume.skills %}
+            <li>
+                <p class="skill-cat">{{ item.name }}</p>
+                <ul>
+                    {% for keyword in item.keywords %}
+                    <li class="keyword">{{ keyword }}</li>
+                    {% endfor %}
+                </ul>
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

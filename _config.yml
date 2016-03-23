@@ -1,0 +1,16 @@
+# Site settings
+title: John Teske
+description: >
+    HTML Email and Front End Developer
+baseurl: ""
+url: "http://johnteske.github.io/"
+
+dropboxpath:
+    local: "images/portfolio/" # symbolic link to local Dropbox Public folder
+    remote: "https://dl.dropboxusercontent.com/u/5492487/johnteske.github.io/portfolio/"
+
+# Build settings
+markdown: kramdown
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
+sass:
+    style: compressed

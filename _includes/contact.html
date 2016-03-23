@@ -1,0 +1,14 @@
+{% assign resume = site.data.resume %}
+
+<ul class="social-media-list">
+    <li>
+        <a href="mailto:{{ resume.basics.email }}" target="_blank">{{ resume.basics.email }}</a>
+    </li>
+    {% for profile in resume.basics.profiles %}
+    <li>
+        <a href="{{ profile.url }}">
+            <i class="icon icon-{{ profile.network | downcase }}"></i><span class="username">{{ profile.network }}</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
