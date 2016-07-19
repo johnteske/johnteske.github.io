@@ -2,8 +2,8 @@
     project: HTML Email Development
     company: Frye Art Museum
     link:
-        title: View fmail-dev repository on GitHub
-        url: "https://github.com/johnteske/fmail-dev"
+        title: View repository on GitHub
+        url: "https://github.com/johnteske/grunt-ejs-mail"
     images:
         - "151019-week-in-genius-crop.jpg"
     challenges:
@@ -13,7 +13,7 @@
     solutions:
         - streamlined development workflow with Grunt
         - standardized layouts with Handlebars templates
-        - standardized styles with SASS
+        - standardized styles with Sass
         - created new 'Week in Genius' layout, a weekly summary of past and upcoming activities as part of the <em>Genius / 21 Century / Seattle</em> exhibition
 
 -

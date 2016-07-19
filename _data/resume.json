@@ -38,10 +38,10 @@
                 Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
                 Manage major web development projects with contract developers.
                 Design and code HTML email marketing campaigns.
-                Refine email development workflow and consistency of code through custom Grunt task runner.
+                Refine workflow and add consistency to code and content through custom templating, scripts, and task runners.
                 Create digital signage content to display exhibition, program, and membership information to museum visitors.
                 Edit and publish content to website and microsites, media sites such as YouTube, SoundCloud, and Vimeo, and social media platforms including Facebook, Twitter, and Instagram.
-                Apply SEO best practices and monitor website and email analytics.
+                Monitor website and email analytics and make strategic recommendations based on data.
                 "
         },
         {
@@ -144,9 +144,10 @@
             "keywords": [
                 "HTML",
                 "CSS",
-                "SASS",
+                "Sass",
                 "JavaScript",
                 "jQuery",
+                "D3",
                 "PHP"
             ]
         },
@@ -155,6 +156,7 @@
             "level": "",
             "keywords": [
                 "Git",
+                "Gulp",
                 "Grunt",
                 "Wordpress",
                 "ExpressionEngine",
