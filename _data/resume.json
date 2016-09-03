@@ -30,19 +30,28 @@
     "work": [
         {
             "company": "Frye Art Museum",
-            "position": "Digital Media Manager",
+            "position": "Manager, Digital Media",
             "website": "http://fryemuseum.org",
-            "startDate": "2015-02-09",
+            "startDate": "2016-02-09",
             "summary": "
-                Add functionality to main website using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
+                Add functionality to website and microsites using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
                 Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
                 Manage major web development projects with contract developers.
                 Design and code HTML email marketing campaigns.
-                Refine workflow and add consistency to code and content through custom templating, scripts, and task runners.
+                Refine workflow and add consistency to code and content through custom templates, task runners, and version control systems.
                 Create digital signage content to display exhibition, program, and membership information to museum visitors.
-                Edit and publish content to website and microsites, media sites such as YouTube, SoundCloud, and Vimeo, and social media platforms including Facebook, Twitter, and Instagram.
+                Edit and publish content to website, microsites, and media sites such as YouTube, SoundCloud, and Vimeo.
+                Strategize and post on social media platforms including Facebook, Instagram, Twitter, and Snapchat.
                 Monitor website and email analytics and make strategic recommendations based on data.
                 "
+        },
+        {
+            "company": "Frye Art Museum",
+            "position": "Digital Media Manager",
+            "website": "http://fryemuseum.org",
+            "startDate": "2015-02-09",
+            "endDate": "2016-02-08",
+            "summary": ""
         },
         {
             "company": "John Teske Music",
