@@ -1,33 +1,24 @@
-{% assign portfolio = site.data.portfolio %}
-{% capture imagesdir %}{% if jekyll.environment == "offline" %}{{ site.dropboxpath.local }}{% else %}{{ site.dropboxpath.remote }}{% endif %}{% endcapture %}
-
-{% for work in portfolio %}
-<div class="project">
-    <h3 class="project-title">{{ work.project }}</h3>
-    <p>{{ work.company }}</p>
-    <div class="col-wrapper">
-        <div class="col col-50">
-        <a href="{{ work.link.url }}">
-        {% for image in work.images %}
-            <img class="work" style="width: {{ 100 | divided_by: work.images.size | minus: 1 }}%" src="{{ imagesdir }}{{ image }}" />
-        {% endfor %}
-        </a>
-        </div>
-        <div class="col col-50">
-            <h4>Challenges</h4>
-            <ul>
-            {% for challenge in work.challenges %}
-                <li>{{ challenge }}</li>
+{% capture img_path %}{% if jekyll.environment == "offline" %}{{ site.img_path.local }}{% else %}{{ site.img_path.remote }}{% endif %}{% endcapture %}
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+        <div class="recentitems portfolio">
+            {% for project in site.categories['project'] limit:include.limit %}
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="{{ img_path }}{{ project.img }}" alt="">
+                    <!-- <img src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}" alt=""> -->
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a0" data-animate="fadeInDown">{{ project.title }}</h3>
+                                <!-- <a data-rel="prettyPhoto" href="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a> -->
+                                <!-- <a href="{{  project.url | prepend: site.baseurl }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a> -->
+                                <a href="{{  project.url | prepend: site.baseurl }}" class="dmbutton a0" data-animate="fadeInUp"><i class="fa fa-search"></i> View</a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
             {% endfor %}
-            </ul>
-            <h4>Solutions</h4>
-            <ul>
-            {% for solution in work.solutions %}
-                <li>{{ solution }}</li>
-            {% endfor %}
-            </ul>
-            <a href="{{ work.link.url }}">{{ work.link.title }} &rarr;</a>
-        </div>
-    </div>
-</div>
-{% endfor %}
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->

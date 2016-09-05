@@ -1,16 +1,53 @@
+### GENERAL SETTINGS ###
+
 # Site settings
 title: John Teske
-description: >
-    HTML Email and Front End Developer
-baseurl: ""
-url: "http://johnteske.github.io/"
-
-dropboxpath:
-    local: "images/portfolio/" # symbolic link to local Dropbox Public folder
-    remote: "https://dl.dropboxusercontent.com/u/5492487/johnteske.github.io/portfolio/"
+description: "HTML Email and Front End Developer"
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://yourdomain.com"
 
 # Build settings
 markdown: kramdown
-exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
-sass:
-    style: compressed
+permalink: /:categories/:title
+excerpt_separator: <!--more-->
+
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+
+# images
+img_path:
+    local: "assets/img/" # symbolic link to local Dropbox Public folder
+    remote: "https://dl.dropboxusercontent.com/u/5492487/johnteske.github.io/portfolio/"
+
+### CONTACT SETTINGS ###
+
+# Social networks usernames
+social:
+  - title: envelope
+    url: "mailto:john.teske@gmail.com" #"mailto:john@johnteske.io"
+  - title: github
+    url: "https://github.com/johnteske"
+  - title: linkedin
+    url: "https://www.linkedin.com/in/johndteske"
+#  - title: twitter
+#    url:
+
+# shown on Contact page
+address:
+  - lines:
+    - Seattle, WA
+email: john@johnteske.io
+#tel:
+
+
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "HTML Email and Front End Developer"

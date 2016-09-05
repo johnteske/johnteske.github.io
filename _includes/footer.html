@@ -1,40 +1,31 @@
-<footer class="site-footer">
-
-    <div class="wrapper">
-
-        <h2 class="footer-heading">{{ site.title }}</h2>
-        <p>{{ site.data.resume.basics.summary }}</p>
-
-        <div class="col-wrapper">
-            <div class="col col-50">
-                <ul class="contact-list">
-                {% for page in site.pages %}
-                    {% if page.title != 'Sites' %}
-                    <li>
-                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
+<div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb">
+                <h4>{{ site.title }}</h4>
+                <div class="hline-w"></div>
+                <p>{{ site.about }} in Seattle, WA</p>
             </div>
-
-            <div class="col col-50">
-                <ul class="social-media-list">
-                {% for profile in site.data.resume.basics.profiles %}
-                    <li>
-                        <a href="{{ profile.url }}">
-                            <i class="icon icon-{{ profile.network | downcase }}"></i><span class="username">{{ profile.network }}</span>
-                        </a>
-                    </li>
-                {% endfor %}
-                </ul>
+            <div class="col-lg-6">
+                <h4>Connect</h4>
+                <div class="hline-w"></div>
+                <p>
+                    {% for network in site.social %}
+                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
+                    {% endfor %}
+                </p>
             </div>
-
-            <div class="col col-100 copyright">
-                <p>&copy; 2015 John Teske</p>
+            {% comment %}
+            <div class="col-lg-4">
+                <h4>Our Bunker</h4>
+                <div class="hline-w"></div>
+                <p>
+                    {% for line in site.address.first.lines %}
+                        {{ line }}<br />
+                    {% endfor %}
+                </p>
             </div>
-        </div>
-
-    </div>
-
-</footer>
+            {% endcomment %}
+        </div><!--/row -->
+    </div><!--/container -->
+</div><!--/footerwrap -->

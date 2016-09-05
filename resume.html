@@ -1,0 +1,88 @@
+---
+layout: resume
+title: Resume
+permalink: /resume/
+---
+{% assign resume = site.data.resume %}
+
+<div class="container mb">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Experience</h3>
+            <ul class="list-unstyled">
+                {% for item in resume.work %}
+                <li>
+                    <p>
+                        <strong>{{ item.position }}</strong>, {{ item.company }}<br />
+                        {% if item.endDate %}
+                            {{ item.startDate | date: '%B %Y' }}&ndash;{{ item.endDate | date: '%B %Y' }}
+                        {% else %}
+                            {{ item.startDate | date: '%B %Y' }}&ndash;Present
+                        {% endif %}
+                    </p>
+                    <p>{{ item.summary }}</p>
+                    {% comment %}<!--
+                    <ul>
+                        {% for hlite in item.highlights %}
+                        <li>{{ hlite }}</li>
+                        {% endfor %}
+                    </ul>
+                    -->{% endcomment %}
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% comment %}<!-- VOLUNTEER -->{% endcomment %}
+
+            <h3>Education</h3>
+            <ul class="list-unstyled">
+                {% for item in resume.education %}
+                <li>
+                    {{ item.institution }}<br />
+                    {{ item.studyType }} of {{ item.area }}, {{ item.endDate | date: '%Y' }}
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% comment %}<!-- AWARDS -->{% endcomment %}
+            {% comment %}<!-- PUBLICATIONS -->{% endcomment %}
+            {% comment %}<!-- LANGUAGES -->{% endcomment %}
+            {% comment %}<!-- INTERESTS -->{% endcomment %}
+            {% comment %}<!-- REFERENCES -->{% endcomment %}
+
+            <!-- <img class="img-responsive" src="{{ "/assets/img/about.jpg" | prepend: site.baseurl }}" alt=""> -->
+        </div>
+        <div class="col-lg-6">
+
+            <h3>Skills</h3>
+            <ul class="list-unstyled">
+                {% for item in resume.skills %}
+                <li>
+                    <p class="">{{ item.name }}</p>
+                    <ul class="list-unstyled">
+                        {% for keyword in item.keywords %}
+                        <li class="" style="display: inline-block; background: #eeeeee; padding: 4px 8px; border-radius: 4px; margin: 0 2px 4px 0;">{{ keyword }}</li>
+                        {% endfor %}
+                    </ul>
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
+            {% comment %}
+            <p>
+                <a href="https://jsonresume.org/">Built with JSON Resume standard</a>
+            </p>
+            {% endcomment %}
+        </div>
+    </div><!-- /row -->
+    {% comment %}
+    <div class="row mt">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+            <h3>Hire me for your next project</h3>
+            <div class="hline"></div>
+            <p><a href="/contact/" class="btn btn-theme">Contact Me</a></p>
+            <p><a href="{{ site.social.[1].url }}" class="btn btn-theme">View LinkedIn Profile</a></p>
+        </div>
+    </div>
+    {% endcomment %}
+</div><!-- /container -->

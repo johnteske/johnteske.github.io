@@ -1,26 +1,73 @@
 ---
-layout: page
-jquery: true
-title: HTML Email and Front End Developer
+layout: index
+title: Home
+permalink: /
 ---
-<section id="intro">
-    I'm a creative developer with an eye for detail.
-    I take pride in making iterative improvements and streamlining processes, informed by user research, analytics, and best practices.
-</section>
+{% comment %}
+<div id="service">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-4">
+                <i class="fa fa-heart-o"></i>
+                <h4>Handsomely Crafted</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-flask"></i>
+                <h4>Retina Ready</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-trophy"></i>
+                <h4>Quality Theme</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+        </div>
+    </div><!--/container -->
+</div><!--/service -->
+{% endcomment %}
 
-<section id="portfolio">
-    <h2>Portfolio</h2>
-    {% include portfolio.html %}
-</section>
+<div class="container mt">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+            <h2>Latest work</h2>
+            <!-- <br> -->
+            <!-- <div class="hline"></div> -->
+        </div>
+    </div>
+</div><!-- /container -->
+{% comment %}{% include portfolio.html title="LATEST WORKS" limit=10 %}{% endcomment %}
+{% include portfolio.html limit=8 %}
 
-<section id="resume">
-    <h2>Resume</h2>
-    {% include resume.html %}
-</section>
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 centered">
+            <h2>View resume</h2>
+            <br>
+            <div class="hline"></div>
+            <!-- <p>{{ site.about }}</p> -->
+            <p><br/><a href="{{ "/resume/" | prepend: site.baseurl }}" class="btn btn-theme">Read resume</a></p>
+        </div>
+        {% comment %}
+        <div class="col-lg-3">
+            <h4>Frequently Asked</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['question'] %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+            {% endfor %}
+        </div>
 
-<section id="contact">
-    <h2>Contact</h2>
-    {% include contact.html %}
-</section>
+        <div class="col-lg-3">
+            <h4>Latest Posts</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['blog'] limit:5 %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+            {% endfor %}
+        </div>
+        {% endcomment %}
 
-<script src="js/scripts.js" charset="utf-8"></script>
+    </div><!-- /row -->
+</div><!-- /container -->
