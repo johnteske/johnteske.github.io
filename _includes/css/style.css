@@ -77,6 +77,13 @@ a:focus {
   text-decoration: none;
   color:{{ site.colors.link_hover }};
 }
+a.btn-social i {
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
 
 ::-moz-selection  {
 	color: #fff;
