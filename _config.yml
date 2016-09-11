@@ -23,7 +23,7 @@ colors:  #in hex code if not noted else
 
 # images
 img_path:
-    local: "assets/img/" # symbolic link to local Dropbox Public folder
+    local: "/assets/portfolio/" # symbolic link to local Dropbox Public folder
     remote: "https://dl.dropboxusercontent.com/u/5492487/johnteske.github.io/portfolio/"
 
 ### CONTACT SETTINGS ###
