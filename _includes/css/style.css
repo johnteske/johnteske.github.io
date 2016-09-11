@@ -143,6 +143,19 @@ a.btn-social i {
 	border-color: transparent;
 }
 
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	border-color: white;
+	background-color: transparent;
+}
+
 .dropdown-menu {
 	background: {{ site.colors.secondary }};
 }
