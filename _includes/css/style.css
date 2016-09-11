@@ -517,3 +517,15 @@ a.anchor{
     top: -80px;
     visibility: hidden;
 }
+
+/* hoverex */
+.he-view {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+.he-view-show {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+}
