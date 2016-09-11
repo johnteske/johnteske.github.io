@@ -33,7 +33,7 @@ permalink: /
 <div class="container mt">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 centered">
-            <h2>Latest work</h2>
+            <h2>Recent work</h2>
             <!-- <br> -->
             <!-- <div class="hline"></div> -->
         </div>
@@ -42,16 +42,18 @@ permalink: /
 {% comment %}{% include portfolio.html title="LATEST WORKS" limit=10 %}{% endcomment %}
 {% include portfolio.html limit=8 %}
 
+{% include hire.html resume=true email=true %}
+
+{% comment %}
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 centered">
-            <h2>View resume</h2>
+            <h2>Hire me for your next project</h2>
             <br>
             <div class="hline"></div>
             <!-- <p>{{ site.about }}</p> -->
-            <p><br/><a href="{{ "/resume/" | prepend: site.baseurl }}" class="btn btn-theme">Read resume</a></p>
+            <p><br/><a href="{{ "/resume/" | prepend: site.baseurl }}" class="btn btn-theme">Read resume</a><a href="mailto:john.teske@gmail.com" class="btn btn-theme">Send me an email</a></p>
         </div>
-        {% comment %}
         <div class="col-lg-3">
             <h4>Frequently Asked</h4>
             <div class="hline"></div>
@@ -67,7 +69,7 @@ permalink: /
                 <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
             {% endfor %}
         </div>
-        {% endcomment %}
 
     </div><!-- /row -->
 </div><!-- /container -->
+{% endcomment %}
