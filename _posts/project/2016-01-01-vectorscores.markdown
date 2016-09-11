@@ -5,8 +5,8 @@ date:   2016-01-01
 present: true
 author: John Teske
 roles:
-- Composer
-- Developer
+- Composition
+- Development
 categories:
 - project
 img: vectorscores/txt-msg.gif
@@ -17,4 +17,5 @@ carousel:
 tagged: D3, Development, Work in Progress
 website: http://vectorscor.es
 ---
+#### Concept
 A series of new compositions built on the web. The works will be algorithmically generated so that each score and each performance is unique while still being shaped by the composition's parameters.

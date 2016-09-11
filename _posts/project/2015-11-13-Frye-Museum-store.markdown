@@ -4,7 +4,7 @@ title:  "Frye Museum Store"
 date:   2015-11-13
 author: John Teske
 roles:
-- Developer
+- Development
 categories:
 - project
 img: Frye-store/store-elephant.jpg
@@ -14,12 +14,12 @@ tagged: Shopify, Liquid, Development, Responsive
 client: Frye Art Museum
 website: http://store.fryemuseum.org/
 ---
-##### Challenges
+##### Concept
+- develop new online store to better integrate with Point of Sale system, with an easy to use product database
 - model closely after fryemuseum.org while retaining unique identity and ecommerce functionality
-- develop event listing feature to promote events and designers
-- develop new and custom features that are easy for staff to use
+- develop custom features to promote store events and designers
 
 ##### Solutions
 - designed and developed Shopify site, based on fryemuseum.org design and brand
-- created custom homepage module to display upcoming events and designer feature blog posts
+- created custom homepage modules to display upcoming events and designer feature blog posts
 - developed custom control panel options to allow simple editing of homepage content
