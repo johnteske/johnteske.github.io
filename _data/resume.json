@@ -30,9 +30,9 @@
     "work": [
         {
             "company": "Frye Art Museum",
-            "position": "Manager, Digital Media",
+            "position": "Digital Media Manager",
             "website": "http://fryemuseum.org",
-            "startDate": "2016-02-09",
+            "startDate": "2015-02-09",
             "summary": "
                 Add functionality to website and microsites using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
                 Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
@@ -44,14 +44,6 @@
                 Strategize and post on social media platforms including Facebook, Instagram, Twitter, and Snapchat.
                 Monitor website and email analytics and make strategic recommendations based on data.
                 "
-        },
-        {
-            "company": "Frye Art Museum",
-            "position": "Digital Media Manager",
-            "website": "http://fryemuseum.org",
-            "startDate": "2015-02-09",
-            "endDate": "2016-02-08",
-            "summary": ""
         },
         {
             "company": "John Teske Music",
