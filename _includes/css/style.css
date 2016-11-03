@@ -542,3 +542,8 @@ a.anchor{
 	opacity: 1;
 	transition-delay: 0s;
 }
+
+/* resume */
+ul.resume li {
+	margin-bottom: 1.5em;
+}
