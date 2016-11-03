@@ -5,9 +5,9 @@ permalink: /resume/
 ---
 {% assign resume = site.data.resume %}
 
-<div class="container mb">
+<div class="container">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb">
             <h3>Experience</h3>
             <ul class="list-unstyled resume">
                 {% for item in resume.work %}
@@ -52,7 +52,7 @@ permalink: /resume/
 
             <!-- <img class="img-responsive" src="{{ "/assets/img/about.jpg" | prepend: site.baseurl }}" alt=""> -->
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mb">
 
             <h3>Skills</h3>
             <ul class="list-unstyled">
@@ -68,6 +68,22 @@ permalink: /resume/
                 </li>
                 {% endfor %}
             </ul>
+
+            <div class="mt">
+            <h3>About</h3>
+            <p>
+                A largely self-taught developer,
+                I grew up using the command line, writing BASIC programs, and
+                creating simple websites for the Web 1.0.
+                While studying at the University of Washington,
+                I learned more complex programming concepts through
+                the <a href="https://dxarts.washington.edu/">DXARTS</a> program,
+                using Common LISP and SuperCollider to compose music.
+                Since then, I've honed my web development skills through
+                various courses, community projects, and my employment and freelance work.
+            </p>
+            </div>
+
             {% comment %}
             <p>
                 <a href="https://jsonresume.org/">Built with JSON Resume standard</a>
@@ -75,14 +91,4 @@ permalink: /resume/
             {% endcomment %}
         </div>
     </div><!-- /row -->
-    {% comment %}
-    <div class="row mt">
-        <div class="col-lg-8 col-lg-offset-2 centered">
-            <h3>Hire me for your next project</h3>
-            <div class="hline"></div>
-            <p><a href="/contact/" class="btn btn-theme">Contact Me</a></p>
-            <p><a href="{{ site.social.[1].url }}" class="btn btn-theme">View LinkedIn Profile</a></p>
-        </div>
-    </div>
-    {% endcomment %}
 </div><!-- /container -->
