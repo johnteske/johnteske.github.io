@@ -2,7 +2,7 @@
 
 # Site settings
 title: John Teske
-description: "HTML Email and Front End Developer"
+description: "Front-end and HTML Email Developer"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://yourdomain.com"
@@ -54,4 +54,4 @@ email: john@johnteske.io
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "HTML Email and Front End Developer"
+about: "Front-end and HTML Email Developer"
