@@ -46,6 +46,11 @@
                 "
         },
         {
+            "company": "Self-Employed",
+            "position": "Freelance Web Developer",
+            "startDate": "2015-01-01"
+        },
+        {
             "company": "John Teske Music",
             "position": "Composer",
             "website": "http://fryemuseum.org",
