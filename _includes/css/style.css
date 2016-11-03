@@ -88,12 +88,12 @@ a.btn-social i {
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:{{ site.colors.secondary }};
+	background:{{ site.colors.primary }};
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:{{ site.colors.secondary }};
+	background:{{ site.colors.primary }};
 }
 
 .centered {
