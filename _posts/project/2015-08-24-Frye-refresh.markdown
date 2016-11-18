@@ -22,3 +22,4 @@ website: http://fryemuseum.org/
 Responsive redesign by Shaun Kardinal, including more image-based layouts.
 Worked with Communications team to reorganize pages and navigation menus for better user experience and easy mobile use.
 Continue to make improvements and add functionality following soft launch.
+Reduced average page load time by 35% and made improvements on perceived load time and browsing experience.
