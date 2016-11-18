@@ -295,7 +295,7 @@ a.btn-social i {
 
 .portfolio-item .title:before {border-radius:0; display:none}
 .portfolio-item p {margin:0px 0 30px;}
-.portfolio-item h3 {margin:-10px 0 10px; font-size:16px;
+.portfolio-item h3 {margin:-10px 0 10px; font-size:18px;
 	 /*text-transform:uppercase;*/
  }
 
@@ -305,7 +305,8 @@ a.btn-social i {
 	color:#fff;
 	margin:0;
 	padding:70px 10px 0;
-	font-size:16px;
+	font-size:18px;
+	line-height: 1.4em;
 	/*text-transform:uppercase;*/
 }
 .tpl6 .dmbutton
