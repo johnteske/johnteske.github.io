@@ -29,25 +29,19 @@
     },
     "work": [
         {
-            "company": "Frye Art Museum",
-            "position": "Digital Media Manager",
-            "website": "http://fryemuseum.org",
-            "startDate": "2015-02-09",
-            "summary": "
-                Add functionality to website and microsites using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
-                Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
-                Manage major web development projects with contract developers.
-                Design and code HTML email marketing campaigns.
-                Refine workflow and add consistency to code and content through custom templates, task runners, and version control systems.
-                Create digital signage content to display exhibition, program, and membership information to museum visitors.
-                Edit and publish content to website, microsites, and media sites such as YouTube, SoundCloud, and Vimeo.
-                Strategize and post on social media platforms including Facebook, Instagram, Twitter, and Snapchat.
-                Monitor website and email analytics and make strategic recommendations based on data.
-                "
+            "company": "Schema Design",
+            "position": "Software Engineer",
+            "startDate": "2017-03-01"
+        },
+        {
+            "company": "Schema Design",
+            "position": "Software Engineer (contractor)",
+            "startDate": "2016-12-01",
+            "endDate": "2017-02-28"
         },
         {
             "company": "Self-Employed",
-            "position": "Freelance Web Developer",
+            "position": "Web Developer",
             "startDate": "2015-01-01"
         },
         {
@@ -60,6 +54,24 @@
                 Design web and print media, including flyers, handbills, social media content, and website.
                 Document and edit audio, photos, and video.
                 Develop custom software tools and interfaces for music production and research.
+                "
+        },
+        {
+            "company": "Frye Art Museum",
+            "position": "Digital Media Manager",
+            "website": "http://fryemuseum.org",
+            "startDate": "2015-02-09",
+            "endDate": "2017-01-31",
+            "summary": "
+                Add functionality to website and microsites using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
+                Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
+                Manage major web development projects with contract developers.
+                Design and code HTML email marketing campaigns.
+                Refine workflow and add consistency to code and content through custom templates, task runners, and version control systems.
+                Create digital signage content to display exhibition, program, and membership information to museum visitors.
+                Edit and publish content to website, microsites, and media sites such as YouTube, SoundCloud, and Vimeo.
+                Strategize and post on social media platforms including Facebook, Instagram, Twitter, and Snapchat.
+                Monitor website and email analytics and make strategic recommendations based on data.
                 "
         },
         {
