@@ -1,23 +1,7 @@
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ "/"  | prepend: site.baseurl }}">{{ site.title }}</a>
-    </div>
-    <div class="navbar-collapse collapse navbar-right">
-      <ul class="nav navbar-nav">
-        {% comment %}<li {% if page.title == "Home" %}class="active"{% endif %}><a href="{{"/" | prepend: site.baseurl }}">HOME</a></li>{% endcomment %}
-        {% comment %}<li {% if page.title == "Blog" %}class="active"{% endif %}><a href="{{"/blog/" | prepend: site.baseurl }}">BLOG</a></li>{% endcomment %}
-        <li {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">PORTFOLIO</a></li>
-        <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="{{"/resume/" | prepend: site.baseurl }}">RESUME</a></li>
-        {% comment %}<li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">CONTACT</a></li>{% endcomment %}
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
+<h1><a href="/">John Teske</a></h1>
+<nav>
+    <ul>
+      <li {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">Portfolio</a></li>
+      <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="{{"/resume/" | prepend: site.baseurl }}">Resume</a></li>
+    </ul>
+</nav>

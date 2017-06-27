@@ -1,5 +1,3 @@
-### GENERAL SETTINGS ###
-
 # Site settings
 title: John Teske
 description: "Front-end and HTML Email Developer"
@@ -12,46 +10,12 @@ markdown: kramdown
 permalink: /:categories/:title
 excerpt_separator: <!--more-->
 
-font_stack:
-  headers: "'Lato', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif"
-  body: "'Lato', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif"
-
-colors:  #in hex code if not noted else
-  primary: "#00b3fe" #"#F70031"
-  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
-  secondary: "#384452" #"#33004D"
-  link: "#428bca"
-  link_hover: "#01b2fe"
-  footer_heading: "#ffffff"
-  footer_content: "#bfc9d3"
-
-# images
-img_path:
-    local: "/assets/portfolio/" # symbolic link to local Dropbox Public folder
-    remote: "https://dl.dropboxusercontent.com/u/5492487/johnteske.github.io/portfolio/"
-
-### CONTACT SETTINGS ###
-
-# Social networks usernames
 social:
-  - title: envelope
+  - title: email
     url: "mailto:john.teske@gmail.com" #"mailto:john@johnteske.io"
   - title: github
     url: "https://github.com/johnteske"
   - title: linkedin
     url: "https://www.linkedin.com/in/johndteske"
-#  - title: twitter
-#    url:
 
-# shown on Contact page
-address:
-  - lines:
-    - Seattle, WA
-email: john@johnteske.io
-#tel:
-
-
-### GENERAL DATA FOR VARIOUS LOCATIONS ###
-
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Front-end and HTML Email Developer"
+about: "Front-end Developer"

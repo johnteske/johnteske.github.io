@@ -1,0 +1,15 @@
+---
+#layout: blog
+title: Categories
+permalink: /category/
+---
+
+{% for category in site.categories %}
+
+{{ category.first }}
+
+{% for post in site.categories[category.first] %}
+    {{ post.title }}
+{% endfor %}
+
+{% endfor %}

@@ -4,31 +4,16 @@ layout: default
 
 {% include wrap.html %}
 
-<div class="container mt">
-    <div class="row">
+<h3>{{ page.title }}</h3>
 
-        {% include carousel.html %}
+{{ content }}
 
-        <div class="col-lg-5 col-lg-offset-1">
-            <div class="spacing"></div>
+<h4>Project Details</h4>
 
-            <h3>{{ page.title }}</h3>
-            {{ content }}
-
-        </div>
-        <div class="col-lg-4 col-lg-offset-1">
-            <div class="spacing"></div>
-            <h4>Project Details</h4>
-            <div class="hline"></div>
-            <p><b>Date:</b> {{ page.date | date: "%b %-d, %Y" }}{% if page.present %}&ndash;Present{% endif %}</p>
-            <p><b>Role:</b> {{ page.roles | join: ', ' }}</p>
-            {% comment %}<p><b>Author:</b> {{ page.author }}</p>{% endcomment %}
-            {% comment %}<p><b>Categories:</b> {{ page.categories }}</p>{% endcomment %}
-            <p><b>Tagged:</b> {{ page.tagged }}</p>
-            {% if page.client %}<p><b>Client:</b> {{ page.client }}</p>{% endif %}
-            <p><b>Website:</b> <a href="{{ page.website }}">{{ page.website | split: '://' | last }}</a></p>
-        </div>
-    </div><!-- /row -->
-</div><!-- /container -->
+<p>Date: {{ page.date | date: "%b %-d, %Y" }}{% if page.present %}&ndash;Present{% endif %}</p>
+<p>Role: {{ page.roles | join: ', ' }}</p>
+<p>Tagged: {{ page.tagged }}</p>
+{% if page.client %}<p>Client: {{ page.client }}</p>{% endif %}
+<p>Website: <a href="{{ page.website }}">{{ page.website | split: '://' | last }}</a></p>
 
 {% include portfolio.html title="Other Works" limit=8 %}
