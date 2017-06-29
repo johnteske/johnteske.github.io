@@ -48,9 +48,9 @@ permalink: /resume/
     {% for item in resume.skills %}
     <li>
         <p>{{ item.name }}</p>
-        <ul>
+        <ul class="skill-pills">
             {% for keyword in item.keywords %}
-            <li class="tag-pill">{{ keyword }}</li>
+            <li><a href="/tag/{{ keyword }}" class="tag-pill">{{ keyword }}</a></li>
             {% endfor %}
         </ul>
     </li>

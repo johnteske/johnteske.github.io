@@ -15,6 +15,7 @@ carousel:
 - vectorscores/txt-msg-1280.gif
 - vectorscores/globject-1280.jpg
 tagged: D3, Development, Work in Progress
+tags: D3 JavaScript Liquid
 website: http://vectorscor.es
 ---
 #### Concept

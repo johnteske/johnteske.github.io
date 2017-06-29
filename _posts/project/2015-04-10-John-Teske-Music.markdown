@@ -10,6 +10,7 @@ categories:
 img: johnteskemusic/forest.jpg
 carousel:
 - johnteskemusic/triptych-1280.jpg
+tags: HTML CSS JavaScript PHP
 tagged: Development, Responsive
 #PHP
 client: John Teske Music

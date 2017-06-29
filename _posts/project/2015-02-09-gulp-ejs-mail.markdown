@@ -14,7 +14,7 @@ thumb: thumb02.jpg
 carousel:
 - gulp-ejs-mail/email-mockup-2-lg.jpg
 tagged: Email, Development
-#Node.js, Gulp, EJS, JavaScript, Sass, HTML, Git
+tags: Node.js Gulp EJS JavaScript Sass HTML Git
 client: Frye Art Museum
 website: https://github.com/johnteske/gulp-ejs-mail
 ---

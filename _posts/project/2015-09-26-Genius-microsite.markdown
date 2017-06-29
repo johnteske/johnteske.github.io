@@ -14,7 +14,7 @@ thumb: thumb02.jpg
 carousel:
 - Genius/triptych-1280.jpg
 tagged: Development, Responsive
-#Tumblr, jQuery, Jekyll, Liquid
+tags: Tumblr jQuery Jekyll Liquid
 client: Frye Art Museum
 website: http://genius.fryemuseum.org/
 ---
