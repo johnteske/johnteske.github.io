@@ -18,3 +18,58 @@ body {
     color: black;
     text-decoration: none;
 }
+
+//
+// Single-page styles
+//
+$base-font-size: 18px;
+$type-scale: 1.618;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+body {
+    font-family: 'Roboto Mono', 'Courier', monospace;
+    font-size: $base-font-size;
+    margin: 2em;
+
+    color: #222;
+    background-color: #fdfeff;
+}
+
+h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: $base-font-size * $type-scale * $type-scale;
+}
+
+h2 {
+    font-size: $base-font-size * $type-scale;
+}
+
+p {
+    margin: 2em 0;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    line-height: 0.95;
+    text-decoration: none;
+    text-shadow:
+        1px 1px white,
+        1px -1px white,
+        -1px 1px white,
+        -1px -1px white;
+    color: #0000EE;
+    border-bottom: 1px solid #0000EE;
+    &:hover, &:visited {
+        color: #551A8A;
+        border-bottom: 1px solid #551A8A;
+    }
+}

@@ -13,9 +13,9 @@ excerpt_separator: <!--more-->
 social:
   - title: email
     url: "mailto:john.teske@gmail.com" #"mailto:john@johnteske.io"
-  - title: github
+  - title: Github
     url: "https://github.com/johnteske"
-  - title: linkedin
+  - title: LinkedIn
     url: "https://www.linkedin.com/in/johndteske"
 
 about: "Front-end Developer"
