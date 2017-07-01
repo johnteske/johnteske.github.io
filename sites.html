@@ -1,40 +1,12 @@
 ---
+layout: sites
 title: Sites
 permalink: /sites/
-jquery: true
 ---
-<!DOCTYPE html>
-<html>
-{% include head.html %}
-<body>
-    <div class="page-content">
-      <div class="wrapper">
-        <h1 style="text-align: center">Which John Teske do you seek?</h1>
-        <div class="col-wrapper" style="text-align: center">
-            <div class="col col-50 codes">
-                <h2>The one that codes and designs</h2>
-                <a href="/">
-                    <i class="icon icon-code icon-5x"></i>
-                    <p>Continue to portfolio site</p>
-                </a>
-            </div>
-            <div class="col col-50 composes">
-                <h2>The one that composes and codes</h2>
-                <a href="http://johnteskemusic.com">
-                    <i class="icon icon-headphones icon-5x"></i>
-                    <p>Go to johnteskemusic.com</p>
-                </a>
-            </div>
-        </div>
-        <p style="text-align: center; color: #888">(They're really the same person, and most of their intersection can be seen on <a class="grey underline" href="http://github.com/johnteske">GitHub</a>)</p>
-     </div>
-    </div>
-    <script>
-        if(Math.floor(Math.random() * 2)) {
-            $('.composes:parent').each(function () {
-                $(this).insertBefore($(this).prev('.codes'));
-            });
-        }
-    </script>
-  </body>
-</html>
+<h1>John Teske</h1>
+<ul>
+    <li><a href="/">Front-end Developer</a></li>
+    <li><a href="http://www.johnteskemusic.com/">Composer</a></li>
+</ul>
+
+<p><a href="https://github.com/johnteske">GitHub</a></p>

@@ -1,23 +1,7 @@
-<div id="headerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <!--<h3>Show your work with this beautiful theme</h3>-->
-                <h1>{{ site.about }}</h1>
-                <h3 style="line-height: 1.5em;">
-                    I'm a creative developer with a focus on
-                    user experience,<br />
-                    simple maintenance,
-                    and information architecture.
-                </h3>
-                <!-- I take pride in making iterative improvements and streamlining processes,</h3> -->
-                <!-- <h5>informed by user research, analytics, and best practices.</h5> -->
-            </div>
-            {% comment %}
-            <div class="col-lg-8 col-lg-offset-2 himg">
-                <img src="{{ "/assets/img/project/vectorscores-nmusa.jpg" | prepend: site.baseurl }}" class="img-responsive">
-            </div>
-            {% endcomment %}
-        </div><!-- /row -->
-    </div> <!-- /container -->
-</div><!-- /headerwrap -->
+{% comment %}<h1><a href="/">John Teske</a></h1>% endcomment %}
+<nav>
+    <ul>
+      <li {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">Portfolio</a></li>
+      <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="{{"/resume/" | prepend: site.baseurl }}">Resume</a></li>
+    </ul>
+</nav>{% endcomment %}

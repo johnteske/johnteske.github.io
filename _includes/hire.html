@@ -1,16 +1,4 @@
-<div class="container mb">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 centered">
-            <h2>Hire me for your next project</h2>
-            <br>
-            <div class="hline"></div>
-            <p>
-                <br/>
-                {% if include.resume %}<a href="{{ "/resume/" | prepend: site.baseurl }}" class="btn btn-theme">Read resume</a>{% endif %}
-                {% if include.github %}<a href="{{ site.social[1].url }}" class="btn btn-theme">View my work on GitHub</a>{% endif %}
-                {% if include.linkedin %}<a href="{{ site.social[2].url }}" class="btn btn-theme">Read resume on LinkedIn</a>{% endif %}
-                {% if include.email %}<a href="{{ site.social[0].url }}" class="btn btn-theme">Send me an email</a>{% endif %}
-            </p>
-        </div>
-    </div><!-- /row -->
-</div><!-- /container -->
+{% if include.resume %}<a href="{{ "/resume/" | prepend: site.baseurl }}">Read resume</a>{% endif %}
+{% if include.github %}<a href="{{ site.social[1].url }}">View my work on GitHub</a>{% endif %}
+{% if include.linkedin %}<a href="{{ site.social[2].url }}">Read resume on LinkedIn</a>{% endif %}
+{% if include.email %}<a href="{{ site.social[0].url }}">Send me an email</a>{% endif %}

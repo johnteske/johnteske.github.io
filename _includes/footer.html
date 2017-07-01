@@ -1,31 +1,11 @@
-<div id="footerwrap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mb">
-                <h4>{{ site.title }}</h4>
-                <div class="hline-w"></div>
-                <p>{{ site.about }} in Seattle, WA</p>
-            </div>
-            <div class="col-lg-6">
-                <h4>Connect</h4>
-                <div class="hline-w"></div>
-                <p>
-                    {% for network in site.social %}
-                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
-                    {% endfor %}
-                </p>
-            </div>
-            {% comment %}
-            <div class="col-lg-4">
-                <h4>Our Bunker</h4>
-                <div class="hline-w"></div>
-                <p>
-                    {% for line in site.address.first.lines %}
-                        {{ line }}<br />
-                    {% endfor %}
-                </p>
-            </div>
-            {% endcomment %}
-        </div><!--/row -->
-    </div><!--/container -->
-</div><!--/footerwrap -->
+{% comment %}<h4>{{ site.title }}</h4>
+<p>{{ site.about }} in Seattle, WA</p>
+
+<h4>Connect</h4>{% endcomment %}
+<ul>
+    {% for network in site.social %}
+    <li>
+        <a href="{{ network.url }}">{{ network.title }}</a>
+    </li>
+    {% endfor %}
+</ul>

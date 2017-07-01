@@ -1,22 +1,9 @@
-{% capture img_path %}{% if jekyll.environment == "offline" %}{{ site.img_path.local }}{% else %}{{ site.img_path.remote }}{% endif %}{% endcapture %}
-<div id="portfoliowrap">
-    <div class="portfolio-centered">
-        {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
-        <div class="recentitems portfolio">
-            {% for project in site.categories['project'] limit:include.limit %}
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="{{ img_path }}{{ project.img }}" alt="">
-                        <div class="he-view">
-                        <a href="{{  project.url | prepend: site.baseurl }}">
-                            <div class="bg a0" data-animate="fadeIn">
-                                    <h3 class="a0" data-animate="fadeInDown">{{ project.title }}</h3>
-                            </div><!-- he bg -->
-                        </a>
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            {% endfor %}
-        </div><!-- portfolio -->
-    </div><!-- portfolio container -->
-</div><!--/Portfoliowrap -->
+{% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+
+<ul>
+    {% for project in site.categories['project'] limit:include.limit %}
+    <li>
+        <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
