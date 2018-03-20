@@ -15,8 +15,8 @@ carousel:
 - vectorscores/txt-msg-1280.gif
 - vectorscores/globject-1280.jpg
 tagged: D3, Development, Work in Progress
-tags: D3 JavaScript Liquid
-website: http://vectorscor.es
+tags: D3 JavaScript Jekyll Liquid Ruby HTML CSS Git
+website: http://vectorscores.org
 ---
 #### Concept
 A series of new compositions built on the web. The works will be algorithmically generated so that each score and each performance is unique while still being shaped by the composition's parameters.

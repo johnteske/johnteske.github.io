@@ -1,0 +1,18 @@
+---
+layout: project
+title:  "Arrays"
+date:   2016-10-01
+author: Schema Design
+roles:
+- Development
+categories:
+- project
+#img: smo/desktop-home.jpg
+#thumb: thumb02.jpg
+carousel:
+- smo/smo-triptych.jpg
+tagged: Development, Wordpress, Responsive, Work in Progress
+tags: HTML CSS JavaScript D3 Angular Node.js Grunt npm Git Nunjucks
+website: https://www.arrays.co/
+---
+#### Concept

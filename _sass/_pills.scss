@@ -17,4 +17,8 @@
     &:visited {
         border-bottom-color: #eeeeee;
     }
+
+    &:hover {
+        border-bottom-color: $web-purple;
+    }
 }

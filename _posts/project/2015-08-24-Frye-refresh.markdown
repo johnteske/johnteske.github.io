@@ -15,7 +15,7 @@ thumb: thumb02.jpg
 carousel:
 - Frye/triptych-1280.jpg
 tagged: User Experience, Information Architecture, Responsive
-tags: PHP ExpressionEngine Sass jQuery
+tags: PHP ExpressionEngine Sass jQuery JavaScript HTML CSS Git
 client: Frye Art Museum
 website: http://fryemuseum.org/
 ---

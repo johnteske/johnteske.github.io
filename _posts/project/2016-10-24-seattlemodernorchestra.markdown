@@ -12,7 +12,7 @@ thumb: thumb02.jpg
 carousel:
 - smo/smo-triptych.jpg
 tagged: Development, Wordpress, Responsive, Work in Progress
-tags: WordPress PHP HTML CSS JavaScript
+tags: WordPress PHP HTML CSS JavaScript Git
 website: http://www.seattlemodernorchestra.org/
 ---
 #### Concept

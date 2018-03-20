@@ -2,7 +2,7 @@
 layout: project
 title:  "Genius / 21 Century / Seattle microsite"
 date:   2015-09-26
-author: Schema
+author: Schema Design
 roles:
 - Project Management
 - Development
@@ -14,7 +14,7 @@ thumb: thumb02.jpg
 carousel:
 - Genius/triptych-1280.jpg
 tagged: Development, Responsive
-tags: Tumblr jQuery Jekyll Liquid
+tags: Tumblr jQuery Jekyll Liquid HTML CSS Git
 client: Frye Art Museum
 website: http://genius.fryemuseum.org/
 ---
