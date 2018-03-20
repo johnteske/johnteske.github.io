@@ -1,0 +1,16 @@
+.pills li {
+    display: inline-block;
+
+    line-height: 2;
+}
+
+.pill {
+    padding: 2px 6px 3px;
+
+    text-decoration: none;
+
+    border: 2px solid #eeeeee;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    text-shadow: none;
+}

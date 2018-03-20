@@ -48,11 +48,12 @@ permalink: /resume/
     {% for item in resume.skills %}
     <li>
         <p>{{ item.name }}</p>
-        <ul class="skill-pills">
+        {% include pills.html items=item.keywords %}
+        <!-- <ul class="pills">
             {% for keyword in item.keywords %}
-            <li><a href="/tag/{{ keyword }}" class="tag-pill">{{ keyword }}</a></li>
+            <li><a href="/tag/{{ keyword }}" class="pill">{{ keyword }}</a></li>
             {% endfor %}
-        </ul>
+        </ul> -->
     </li>
     {% endfor %}
 </ul>
@@ -75,5 +76,3 @@ permalink: /resume/
 <a href="https://jsonresume.org/">Built with JSON Resume standard</a>
 </p>
 {% endcomment %}
-
-{% include hire.html linkedin=true email=true %}

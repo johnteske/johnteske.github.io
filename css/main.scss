@@ -1,43 +1,30 @@
 ---
 ---
-body {
-    font-family: 'Courier', monospace;
-    line-height: 1.5;
-}
-
-.skill-pills li {
-    display: inline-block;
-    line-height: 2;
-}
-
-.tag-pill {
-    border-radius: 4px;
-    padding: 2px 6px 3px;
-    background: #eeeeee;
-
-    color: black;
-    text-decoration: none;
-}
-
-//
-// Single-page styles
-//
 $base-font-size: 18px;
 $type-scale: 1.618;
+
+$text-color: #222222;
+$bg-color: #FDFEFF;
+$web-blue: #0000EE;
+$web-purple: #551A8A;
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 body {
-    font-family: 'Roboto Mono', 'Courier', monospace;
-    font-size: $base-font-size;
     margin: 2em;
 
-    color: #222;
-    background-color: #fdfeff;
+    color: $text-color;
+    background-color: $bg-color;
+
+    font-family: 'Roboto Mono', 'Courier', monospace;
+    font-size: $base-font-size;
+    line-height: 1.5;
 }
 
 h1, h2, p, ul {
     margin: 0;
     padding: 0;
+
     font-weight: normal;
 }
 
@@ -53,23 +40,41 @@ p {
     margin: 2em 0;
 }
 
-li {
+.contact-link-list li {
     display: inline-block;
 }
 
+$duration: 150ms;
+
 a {
     display: inline-block;
-    line-height: 0.95;
+
+    transition: color $duration, border-bottom-color $duration, line-height $duration;
+    transition-timing-function: ease-in-out;
     text-decoration: none;
+
+    color: $web-blue;
+    border-bottom: 2px solid $web-blue;
     text-shadow:
-        1px 1px white,
-        1px -1px white,
-        -1px 1px white,
-        -1px -1px white;
-    color: #0000EE;
-    border-bottom: 1px solid #0000EE;
+        1px 1px $bg-color,
+        1px -1px $bg-color,
+        -1px 1px $bg-color,
+        -1px -1px $bg-color;
+
+    line-height: 1;
+
     &:hover, &:visited {
-        color: #551A8A;
-        border-bottom: 1px solid #551A8A;
+        color: $web-purple;
+        border-bottom-color: $web-purple;
+    }
+
+    &:hover {
+        line-height: 1.2;
     }
 }
+
+footer {
+    margin: 2em 0;
+}
+
+@import 'pills';

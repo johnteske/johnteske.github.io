@@ -1,11 +1,9 @@
-{% comment %}<h4>{{ site.title }}</h4>
-<p>{{ site.about }} in Seattle, WA</p>
-
-<h4>Connect</h4>{% endcomment %}
-<ul>
-    {% for network in site.social %}
-    <li>
-        <a href="{{ network.url }}">{{ network.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+<footer>
+    <ul class="contact-link-list">
+        {% for network in site.social %}
+        <li>
+            <a href="{{ network.url }}">{{ network.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</footer>

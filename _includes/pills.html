@@ -1,0 +1,5 @@
+<ul class="pills">
+    {% for tag in include.items %}
+    <li><a href="/tag/{{ tag }}" class="pill">{{ tag }}</a></li>
+    {% endfor %}
+</ul>
