@@ -49,11 +49,6 @@ permalink: /resume/
     <li>
         <p>{{ item.name }}</p>
         {% include pills.html items=item.keywords %}
-        <!-- <ul class="pills">
-            {% for keyword in item.keywords %}
-            <li><a href="/tag/{{ keyword }}" class="pill">{{ keyword }}</a></li>
-            {% endfor %}
-        </ul> -->
     </li>
     {% endfor %}
 </ul>

@@ -13,4 +13,8 @@
     border-radius: 4px;
     background-color: #eeeeee;
     text-shadow: none;
+
+    &:visited {
+        border-bottom-color: #eeeeee;
+    }
 }
