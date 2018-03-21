@@ -3,21 +3,17 @@ layout: default
 title: Home
 permalink: /
 ---
-<h1>John Teske</h1>
-<h2>{{ site.about }}</h2>
+<h1>{{ site.title }}</h1>
+<h2>{{ site.description }}</h2>
+
 <p>
-    I'm a creative developer
-    with a focus on
-    user experience,
-    simple maintenance,
-    and information architecture.
-<p>
+    I'm a creative developer with a focus on user experience, simple maintenance, and information architecture.
 </p>
+<p>
     I currently work at <a href="https://www.schemadesign.com/">Schema Design</a> in Seattle, WA.
+    I compose music using code and create open source projects for the music community.
 </p>
-
-{% comment %}<h2>Recent work</h2>
-{% include portfolio.html title="LATEST WORKS" limit=10 %}
-{% include portfolio.html limit=8 %}
-
-{% include hire.html resume=true email=true %}{% endcomment %}
+<p>
+    {% comment %}View my <a href="portfolio">portfolio</a> or{% endcomment %}
+    View my <a href="resume">resume</a>.
+</p>

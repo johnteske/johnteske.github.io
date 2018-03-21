@@ -2,14 +2,28 @@
 layout: default
 title: Tags
 ---
-{% for tag in site.tags %}
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
     {% assign tag_name = tag | first %}
-    <h2 id="{{ tag_name }}">{{ tag_name }}</h2>
+    <h3 id="{{ tag_name }}" class="tag">{{ tag_name }}</h3>
     <ul>
         {% for post in site.tags[tag_name] %}
         <li>
-            {{ post.title }}{{ post.url }}
+            <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
     </ul>
 {% endfor %}
+
+<script>
+    var hash = window.location.href.split('#')[1];
+    var el;
+
+    if (hash) {
+        el = document.getElementById(hash);
+
+        if (el) {
+            el.classList.add('active');
+        }
+    }
+</script>

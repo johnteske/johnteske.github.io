@@ -1,7 +1,12 @@
-{% comment %}<h1><a href="/">John Teske</a></h1>% endcomment %}
-<nav>
-    <ul>
-      <li {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">Portfolio</a></li>
-      <li {% if page.title == "Resume" %}class="active"{% endif %}><a href="{{"/resume/" | prepend: site.baseurl }}">Resume</a></li>
-    </ul>
-</nav>{% endcomment %}
+<header>
+    <a href="/" class="site-title">{{ site.title }}</a>
+    <p>{{ site.description }}</p>
+    {% comment %}
+    <nav>
+        <ul>
+            <li>{% if page.title == "Portfolio" %}Portfolio{% else %}<a href="{{"/portfolio/" | prepend: site.baseurl }}">Portfolio</a>{% endif %}</li>
+            <li>{% if page.title == "Resume" %}Resume{% else %}<a href="{{"/resume/" | prepend: site.baseurl }}">Resume</a>{% endif %}</li>
+        </ul>
+    </nav>
+    {% endcomment %}
+</header>

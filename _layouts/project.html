@@ -9,11 +9,9 @@ layout: default
 <p>Date: {{ page.date | date: "%b %-d, %Y" }}{% if page.present %}&ndash;Present{% endif %}</p>
 <p>Role: {{ page.roles | join: ', ' }}</p>
 <p>Tagged: {{ page.tagged }}</p>
-<ul class="skill-pills">
-    {% for tag in page.tags %}
-    <li><a href="/tag/{{ tag }}" class="tag-pill">{{ tag }}</a></li>
-    {% endfor %}
-</ul>
+
+{% include pills.html items=page.tags %}
+
 {% if page.client %}<p>Client: {{ page.client }}</p>{% endif %}
 <p>Website: <a href="{{ page.website }}">{{ page.website | split: '://' | last }}</a></p>
 

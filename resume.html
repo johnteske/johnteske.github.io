@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 {% assign resume = site.data.resume %}
 
-<h3>Experience</h3>
+<h2>Experience</h2>
 <ul>
     {% for item in resume.work %}
     <li>
@@ -14,50 +14,33 @@ permalink: /resume/
             {{ item.startDate | date: '%B %Y' }}&ndash;{{ item.endDate | date: '%B %Y' | default: 'Present' }}
         </p>
         <p>{{ item.summary }}</p>
-        {% comment %}<!--
-        <ul>
-        {% for hlite in item.highlights %}
-        <li>{{ hlite }}</li>
-        {% endfor %}
-        </ul>
-        -->{% endcomment %}
     </li>
     {% endfor %}
 </ul>
 
-{% comment %}<!-- VOLUNTEER -->{% endcomment %}
-
-<h3>Education</h3>
+<h2>Education</h2>
 <ul>
     {% for item in resume.education %}
     <li>
-        {{ item.institution }}<br />
-        {{ item.studyType }} of {{ item.area }}, {{ item.endDate | date: '%Y' }}
+        <p>
+            {{ item.institution }}<br />
+            {{ item.studyType }} of {{ item.area }}, {{ item.endDate | date: '%Y' }}
+        </p>
     </li>
     {% endfor %}
 </ul>
 
-{% comment %}<!-- AWARDS -->{% endcomment %}
-{% comment %}<!-- PUBLICATIONS -->{% endcomment %}
-{% comment %}<!-- LANGUAGES -->{% endcomment %}
-{% comment %}<!-- INTERESTS -->{% endcomment %}
-{% comment %}<!-- REFERENCES -->{% endcomment %}
-
-<h3>Skills</h3>
+<h2>Skills</h2>
 <ul>
     {% for item in resume.skills %}
     <li>
         <p>{{ item.name }}</p>
-        <ul class="skill-pills">
-            {% for keyword in item.keywords %}
-            <li><a href="/tag/{{ keyword }}" class="tag-pill">{{ keyword }}</a></li>
-            {% endfor %}
-        </ul>
+        {% include pills.html items=item.keywords %}
     </li>
     {% endfor %}
 </ul>
 
-<h3>About</h3>
+<h2>About</h2>
 <p>
     A largely self-taught developer,
     I grew up using the command line, writing BASIC programs, and
@@ -68,12 +51,4 @@ permalink: /resume/
     using Common LISP and SuperCollider to compose music.
     Since then, I've honed my web development skills through
     various courses, community projects, and my employment and freelance work.
-    </p>
-
-{% comment %}
-<p>
-<a href="https://jsonresume.org/">Built with JSON Resume standard</a>
 </p>
-{% endcomment %}
-
-{% include hire.html linkedin=true email=true %}

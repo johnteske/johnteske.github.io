@@ -1,75 +1,119 @@
 ---
 ---
-body {
-    font-family: 'Courier', monospace;
-    line-height: 1.5;
-}
-
-.skill-pills li {
-    display: inline-block;
-    line-height: 2;
-}
-
-.tag-pill {
-    border-radius: 4px;
-    padding: 2px 6px 3px;
-    background: #eeeeee;
-
-    color: black;
-    text-decoration: none;
-}
-
-//
-// Single-page styles
-//
 $base-font-size: 18px;
 $type-scale: 1.618;
+
+$text-color: #222222;
+$bg-color: #FDFEFF;
+$web-blue: #0000EE;
+$web-purple: #551A8A;
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 body {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem * $type-scale * $type-scale;
+
+    color: $text-color;
+    background-color: $bg-color;
+
     font-family: 'Roboto Mono', 'Courier', monospace;
     font-size: $base-font-size;
-    margin: 2em;
-
-    color: #222;
-    background-color: #fdfeff;
+    line-height: $type-scale;
 }
 
-h1, h2, p, ul {
+main {
+    max-width: 45rem;
+}
+
+h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
 }
 
 h1 {
-    font-size: $base-font-size * $type-scale * $type-scale;
+    font-size: 1rem * $type-scale * $type-scale;
 }
 
 h2 {
-    font-size: $base-font-size * $type-scale;
+    font-size: 1rem * $type-scale;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 p {
-    margin: 2em 0;
+    margin: (1rem * $type-scale) 0;
 }
 
-li {
+ul + h2 {
+    margin-top: 1rem * $type-scale * $type-scale;
+}
+
+.contact-link-list li {
     display: inline-block;
 }
+
+$duration: 150ms;
 
 a {
     display: inline-block;
-    line-height: 0.95;
+
+    transition: color $duration, border-bottom-color $duration, line-height $duration;
+    transition-timing-function: ease-in-out;
     text-decoration: none;
+
+    color: $web-blue;
+    border-bottom: 2px solid $web-blue;
     text-shadow:
-        1px 1px white,
-        1px -1px white,
-        -1px 1px white,
-        -1px -1px white;
-    color: #0000EE;
-    border-bottom: 1px solid #0000EE;
+        1px 1px $bg-color,
+        1px -1px $bg-color,
+        -1px 1px $bg-color,
+        -1px -1px $bg-color;
+
+    line-height: 1;
+
     &:hover, &:visited {
-        color: #551A8A;
-        border-bottom: 1px solid #551A8A;
+        color: $web-purple;
+        border-bottom-color: $web-purple;
+    }
+
+    &:hover {
+        line-height: 1.2;
     }
 }
+
+.site-title {
+    font-size: $base-font-size * $type-scale;
+    color: $text-color;
+    border-bottom: none;
+    line-height: 1;
+
+    &:hover, &:visited {
+        color: $text-color;
+        border-bottom: none;
+        line-height: 1;
+    }
+
+    &:hover {
+        color: $web-purple;
+    }
+}
+
+footer {
+    margin: 2em 0;
+    padding: 1em 0;
+
+    border-top: 2px solid $text-color;
+
+}
+
+.tag.active {
+    text-decoration: underline;
+}
+
+@import 'header';
+@import 'pills';

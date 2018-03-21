@@ -11,7 +11,7 @@ img: Frye-store/store-elephant.jpg
 carousel:
 - Frye-store/triptych-1280.jpg
 tagged: Shopify, Liquid, Development, Responsive
-tags: Shopify Liquid
+tags: Shopify Liquid HTML CSS Git
 client: Frye Art Museum
 website: http://store.fryemuseum.org/
 ---
