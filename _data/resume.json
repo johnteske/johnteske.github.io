@@ -30,18 +30,19 @@
     "work": [
         {
             "company": "Schema Design",
-            "position": "Software Engineer",
-            "startDate": "2017-03-01"
+            "position": "Software Engineer I",
+            "startDate": "2017-03-01",
+            "summary": "Design, develop, and implement software solutions with a focus on interactive data visualization. Develop web-based applications, websites, and prototypes using Node.js, HTML, CSS, Javascript, as well as frameworks such as D3, Vue, and Angular. Work collaboratively with designers and work closely with clients to create custom solutions for enterprise and public-facing applications."
         },
         {
             "company": "Schema Design",
-            "position": "Software Engineer (contractor)",
+            "position": "Contract Software Engineer",
             "startDate": "2016-12-01",
             "endDate": "2017-02-28"
         },
         {
             "company": "Self-Employed",
-            "position": "Web Developer",
+            "position": "Freelance Web Developer",
             "startDate": "2015-01-01"
         },
         {
@@ -49,12 +50,7 @@
             "position": "Composer",
             "website": "http://fryemuseum.org",
             "startDate": "2003-09-01",
-            "summary": "
-                Compose and produce music with an emphasis on listener experience and environment.
-                Design web and print media, including flyers, handbills, social media content, and website.
-                Document and edit audio, photos, and video.
-                Develop custom software tools and interfaces for music production and research.
-                "
+            "summary": "Compose and produce music with an emphasis on listener experience and environment. Design digital and print media, including flyers, handbills, social media content, and websites. Document and edit audio, photos, and video. Develop custom software tools and interfaces for composition, music production and research."
         },
         {
             "company": "Frye Art Museum",
@@ -62,52 +58,31 @@
             "website": "http://fryemuseum.org",
             "startDate": "2015-02-09",
             "endDate": "2017-01-31",
-            "summary": "
-                Add functionality to website and microsites using HTML, CSS, PHP, JavaScript, jQuery, and ExpressionEngine tags.
-                Maintain exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr.
-                Manage major web development projects with contract developers.
-                Design and code HTML email marketing campaigns.
-                Refine workflow and add consistency to code and content through custom templates, task runners, and version control systems.
-                Create digital signage content to display exhibition, program, and membership information to museum visitors.
-                Edit and publish content to website, microsites, and media sites such as YouTube, SoundCloud, and Vimeo.
-                Strategize and post on social media platforms including Facebook, Instagram, Twitter, and Snapchat.
-                Monitor website and email analytics and make strategic recommendations based on data.
-                "
+            "summary": "Designed, developed, and implemented new features for the main website and microsites using HTML, CSS, PHP, and JavaScript. Maintained website and exhibition microsites built on ExpressionEngine, Wordpress, and Tumblr. Managed major web development projects with contract developers. Designed and developed HTML email marketing campaigns. Refined workflow and added consistency to code, design, and content through custom templates, task runners, and version control. Created digital signage systems and content to display exhibition, program, and membership information to museum visitors. Edited and published content to website, microsites, and media sites such as YouTube, SoundCloud, and Vimeo. Monitored website and email analytics and made strategic recommendations based on data."
         },
         {
             "company": "Frye Art Museum",
-            "position": "Lead Audio Visual Technician and Facilities Associate",
+            "position": "Facilities Associate",
             "website": "http://fryemuseum.org",
             "startDate": "2013-06-01",
             "endDate": "2015-02-08",
-            "summary": "
-                Coproduced high quality cultural experiences with presenters and museum staff.
-                Managed contract event technicians and advised exhibitions department on audio design for gallery shows.
-                Optimized and enhanced presentation and audience experience through content formatting and customer service.
-                Performed regular gallery maintenance as Facilities Associate.
-                "
+            "summary": "Coproduced high quality cultural experiences with presenters and museum staff as lead event technician. Managed contract event technicians and advised exhibitions department on audio design for gallery shows. Optimized and enhanced presentation and audience experience through content formatting and customer service. Performed regular gallery maintenance as Facilities Associate."
         },
         {
             "company": "Montlake Bicycle Shop",
             "position": "Mechanic",
-            "website": "#",
+            "website": "https://montlakebike.com/",
             "startDate": "2011-05-01",
             "endDate": "2013-05-01",
-            "summary": "
-                Developed personalized solutions for customers, from budget repair and maintenance to building new bikes with custom part kits.
-                Designed and built storage and display solutions after remodel, advised on website and visual design overhaul.
-                "
+            "summary": "Developed personalized solutions for customers, from budget repair and maintenance to building new bikes with custom part kits. Designed and built storage and display solutions after remodel, advised on website and visual design overhaul."
         },
         {
             "company": "Frye Art Museum",
-            "position": "Event Technician (contractor)",
+            "position": "Contract Event Technician",
             "website": "http://fryemuseum.org",
             "startDate": "2009-08-01",
             "endDate": "2013-05-31",
-            "summary": "
-                Facilitated the production of concerts, lectures, and film screenings.
-                Operated audio/visual equipment, designed and hung custom lighting for exhibition opening events.
-                "
+            "summary": "Facilitated the production of events including concerts, lectures, and film screenings. Operated audio/visual equipment, designed and hung custom lighting for museum opening events."
         },
         {
             "company": "Gregg's Greenlake Cycles",
@@ -115,9 +90,7 @@
             "website": "",
             "startDate": "2009-05-01",
             "endDate": "2011-03-31",
-            "summary": "
-                In addition to regular service tasks, assisted in the development of a more user-centered customer service structure.
-                "
+            "summary": "Assisted in the development of a more efficient customer service and billing structure, in addition to regular service tasks."
         },
         {
             "company": "Seattle Chamber Music Society",
@@ -125,9 +98,7 @@
             "website": "",
             "startDate": "2008-02-01",
             "endDate": "2009-06-30",
-            "summary": "
-                Developed and coordinated education and outreach programs, managed administrative and concert operations, designed digital and print materials, maintained and optimized website, provided in-office IT support.
-                "
+            "summary": "Developed and coordinated education and outreach programs, managed administrative and concert operations, designed digital and print materials, optimized website design, provided in-office IT support."
         },
         {
             "company": "Gregg's Greenlake Cycles",
@@ -153,6 +124,7 @@
             "studyType": "Bachelor",
             "startDate": "2003-09-01",
             "endDate": "2007-06-01",
+            "summary": "Scanned and digitally archived film slides, retouched images in Photoshop, kept detailed records of alterations, uploaded files on custom webpages for student and faculty access. Worked closely with supervisor to create more efficient systems as digital archiving increased."
         }
     ],
     "skills": [
