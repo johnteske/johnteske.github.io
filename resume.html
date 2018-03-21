@@ -14,18 +14,9 @@ permalink: /resume/
             {{ item.startDate | date: '%B %Y' }}&ndash;{{ item.endDate | date: '%B %Y' | default: 'Present' }}
         </p>
         <p>{{ item.summary }}</p>
-        {% comment %}<!--
-        <ul>
-        {% for hlite in item.highlights %}
-        <li>{{ hlite }}</li>
-        {% endfor %}
-        </ul>
-        -->{% endcomment %}
     </li>
     {% endfor %}
 </ul>
-
-{% comment %}<!-- VOLUNTEER -->{% endcomment %}
 
 <h3>Education</h3>
 <ul>
@@ -36,12 +27,6 @@ permalink: /resume/
     </li>
     {% endfor %}
 </ul>
-
-{% comment %}<!-- AWARDS -->{% endcomment %}
-{% comment %}<!-- PUBLICATIONS -->{% endcomment %}
-{% comment %}<!-- LANGUAGES -->{% endcomment %}
-{% comment %}<!-- INTERESTS -->{% endcomment %}
-{% comment %}<!-- REFERENCES -->{% endcomment %}
 
 <h3>Skills</h3>
 <ul>
@@ -64,10 +49,4 @@ permalink: /resume/
     using Common LISP and SuperCollider to compose music.
     Since then, I've honed my web development skills through
     various courses, community projects, and my employment and freelance work.
-    </p>
-
-{% comment %}
-<p>
-<a href="https://jsonresume.org/">Built with JSON Resume standard</a>
 </p>
-{% endcomment %}

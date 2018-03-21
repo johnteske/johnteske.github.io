@@ -11,7 +11,9 @@ $web-purple: #551A8A;
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 body {
-    margin: 2em;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 2em;
 
     color: $text-color;
     background-color: $bg-color;
@@ -19,6 +21,10 @@ body {
     font-family: 'Roboto Mono', 'Courier', monospace;
     font-size: $base-font-size;
     line-height: 1.5;
+}
+
+main {
+    max-width: 45em;
 }
 
 h1, h2, p, ul {
@@ -34,6 +40,10 @@ h1 {
 
 h2 {
     font-size: $base-font-size * $type-scale;
+}
+
+h3 {
+    font-size: $base-font-size;
 }
 
 p {
@@ -73,12 +83,34 @@ a {
     }
 }
 
+.site-title {
+    font-size: $base-font-size * $type-scale;
+    color: $text-color;
+    border-bottom: none;
+    line-height: 1;
+
+    &:hover, &:visited {
+        color: $text-color;
+        border-bottom: none;
+        line-height: 1;
+    }
+
+    &:hover {
+        color: $web-purple;
+    }
+}
+
 footer {
     margin: 2em 0;
+    padding: 1em 0;
+
+    border-top: 2px solid $text-color;
+
 }
 
 .tag.active {
     text-decoration: underline;
 }
 
+@import 'header';
 @import 'pills';
