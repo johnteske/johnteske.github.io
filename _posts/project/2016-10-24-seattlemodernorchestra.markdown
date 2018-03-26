@@ -7,10 +7,8 @@ roles:
 - Development
 categories:
 - project
-img: smo/desktop-home.jpg
-thumb: thumb02.jpg
-carousel:
-- smo/smo-triptych.jpg
+images:
+- https://www.dropbox.com/s/yjbkx3z79qcnkku/smo-triptych.jpg?dl=1
 tags: WordPress PHP HTML CSS JavaScript Git
 website: http://www.seattlemodernorchestra.org/
 

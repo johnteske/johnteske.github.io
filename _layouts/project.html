@@ -3,6 +3,12 @@ layout: default
 ---
 {{ content }}
 
+{% for img in page.images %}
+    <div class="image-container">
+        <img data-src="{{ img }}" />
+    </div>
+{% endfor %}
+
 {% if page.concept %}
     <h2>Concept</h2>
     {% include copy-or-list.html content=page.concept %}
@@ -25,3 +31,29 @@ layout: default
 
 <h2>Other works</h2>
 {% include portfolio-list.html limit=8 %}
+
+<script>
+function deferImageLoading() {
+    var imageElements = document.getElementsByTagName('img');
+    var images = [];
+
+    function preload(image, src) {
+        return function() {
+            image.setAttribute('src', src);
+            image.classList.add('loaded');
+        };
+    }
+
+    for (var i = 0; i < imageElements.length; i++) {
+        var src = imageElements[i].getAttribute('data-src');
+
+        if (src) {
+            images[i] = new Image();
+            images[i].onload = preload(imageElements[i], src);
+            images[i].src = src;
+        }
+    }
+}
+
+window.onload = deferImageLoading;
+</script>
