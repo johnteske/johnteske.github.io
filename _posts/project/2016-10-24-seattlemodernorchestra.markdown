@@ -11,9 +11,8 @@ img: smo/desktop-home.jpg
 thumb: thumb02.jpg
 carousel:
 - smo/smo-triptych.jpg
-tagged: Development, Wordpress, Responsive, Work in Progress
 tags: WordPress PHP HTML CSS JavaScript Git
 website: http://www.seattlemodernorchestra.org/
+
+concept: Redesign seattlemodernorchestra.org to be responsive, to include a blog, and be easy to maintain.
 ---
-#### Concept
-Redesign seattlemodernorchestra.org to be responsive, to include a blog, and be easy to maintain.

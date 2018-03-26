@@ -18,4 +18,5 @@ title: Kitchen Sink
 {% include pills.html items=all_tags %}
 {% if page.client %}<p>Client: {{ page.client }}</p>{% endif %}
 
-{% include portfolio.html title="Other Works" limit=8 %}
+<h2>Other works</h2>
+{% include portfolio-list.html limit=8 %}

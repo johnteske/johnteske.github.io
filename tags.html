@@ -5,7 +5,7 @@ title: Tags
 {% assign sorted_tags = site.tags | sort %}
 {% for tag in sorted_tags %}
     {% assign tag_name = tag | first %}
-    <h3 id="{{ tag_name }}" class="tag">{{ tag_name }}</h3>
+    <h2 id="{{ tag_name }}" class="tag">{{ tag_name }}</h2>
     <ul>
         {% for post in site.tags[tag_name] %}
         <li>

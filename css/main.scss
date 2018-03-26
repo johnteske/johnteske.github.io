@@ -30,10 +30,13 @@ main {
 h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+
     font-weight: normal;
 }
 
 h1 {
+    margin-bottom: 1rem;
+
     font-size: 1rem * $type-scale * $type-scale;
 }
 
@@ -87,19 +90,17 @@ a {
 }
 
 .site-title {
-    font-size: $base-font-size * $type-scale;
     color: $text-color;
     border-bottom: none;
+
+    font-size: $base-font-size * $type-scale;
     line-height: 1;
 
     &:hover, &:visited {
         color: $text-color;
         border-bottom: none;
-        line-height: 1;
-    }
 
-    &:hover {
-        color: $web-purple;
+        line-height: 1;
     }
 }
 

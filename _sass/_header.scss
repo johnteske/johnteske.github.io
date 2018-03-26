@@ -1,13 +1,15 @@
 header {
-    margin-bottom: 2em;
-    padding: 0 0 2em;
+    margin-bottom: 2rem;
 
     border-bottom: 2px solid $text-color;
 
     p {
         margin: 0;
     }
-    // li {
-    //     display: inline-block;
-    // }
+
+    li {
+        display: inline-block;
+
+        margin: 1rem 0;
+    }
 }

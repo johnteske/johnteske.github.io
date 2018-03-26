@@ -14,12 +14,13 @@ img: Frye/Frye-home.jpg
 thumb: thumb02.jpg
 carousel:
 - Frye/triptych-1280.jpg
-tagged: User Experience, Information Architecture, Responsive
-tags: PHP ExpressionEngine Sass jQuery JavaScript HTML CSS Git
+tags: [User Experience, Information Architecture, Responsive, PHP, ExpressionEngine, Sass, jQuery, JavaScript, HTML, CSS, Git]
 client: Frye Art Museum
 website: http://fryemuseum.org/
+
+solutions:
+- Responsive redesign by Shaun Kardinal, including more image-based layouts.
+- Worked with Communications team to reorganize pages and navigation menus for better user experience and easy mobile use.
+- Continue to make improvements and add functionality following soft launch.
+- Reduced average page load time by 35% and made improvements on perceived load time and browsing experience.
 ---
-Responsive redesign by Shaun Kardinal, including more image-based layouts.
-Worked with Communications team to reorganize pages and navigation menus for better user experience and easy mobile use.
-Continue to make improvements and add functionality following soft launch.
-Reduced average page load time by 35% and made improvements on perceived load time and browsing experience.

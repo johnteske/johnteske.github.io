@@ -1,18 +1,27 @@
 ---
 layout: default
 ---
-
 {{ content }}
 
-<h4>Project Details</h4>
+{% if page.concept %}
+    <h2>Concept</h2>
+    {% include copy-or-list.html content=page.concept %}
+{% endif %}
 
-<p>Date: {{ page.date | date: "%b %-d, %Y" }}{% if page.present %}&ndash;Present{% endif %}</p>
-<p>Role: {{ page.roles | join: ', ' }}</p>
-<p>Tagged: {{ page.tagged }}</p>
+{% if page.solutions %}
+    <h2>Solutions</h2>
+    {% include copy-or-list.html content=page.solutions %}
+{% endif %}
 
 {% include pills.html items=page.tags %}
 
-{% if page.client %}<p>Client: {{ page.client }}</p>{% endif %}
-<p>Website: <a href="{{ page.website }}">{{ page.website | split: '://' | last }}</a></p>
+<h2>Project Details</h2>
+<p>
+    Date: {{ page.date | date: "%b %-d, %Y" }}{% if page.present %}&ndash;Present{% endif %}<br />
+    Role: {{ page.roles | join: ', ' }}<br />
+    {% if page.client %}Client: {{ page.client }}<br />{% endif %}
+    Website: <a href="{{ page.website }}">{{ page.website | split: '://' | last }}</a>
+</p>
 
-{% include portfolio.html title="Other Works" limit=8 %}
+<h2>Other works</h2>
+{% include portfolio-list.html limit=8 %}
