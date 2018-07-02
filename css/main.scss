@@ -23,11 +23,64 @@ body {
     line-height: $type-scale;
 }
 
-main {
-    max-width: 45rem;
+.image-container {
+    position: relative;
+
+    width: 100%;
+    padding-bottom: 46.875%;
+
+    border: 2px solid $text-color;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 1em;
+        height: 2px;
+        background: $text-color;
+
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 1500ms;
+        animation-name: spin;
+        animation-duration: 1500ms;
+    }
+
+    img {
+        position: absolute;
+
+        width: 100%;
+
+        -webkit-transition: opacity 300ms ease;
+        transition: opacity 300ms ease;
+
+        opacity: 0;
+
+        &.loaded {
+            opacity: 1;
+        }
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: translate(-50%) rotate(0deg);
+    } to {
+        -webkit-transform: translate(-50%) rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%) rotate(0deg);
+    } to {
+        transform: translate(-50%) rotate(360deg);
+    }
 }
 
 h1, h2, h3, p, ul {
+    max-width: 45rem;
     margin: 0;
     padding: 0;
 
@@ -52,6 +105,7 @@ p {
     margin: (1rem * $type-scale) 0;
 }
 
+.image-container + h2,
 ul + h2 {
     margin-top: 1rem * $type-scale * $type-scale;
 }

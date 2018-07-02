@@ -9,10 +9,8 @@ roles:
 - Digital Marketing Strategy
 categories:
 - project
-img: gulp-ejs-mail/email-mockup-2.jpg
-thumb: thumb02.jpg
-carousel:
-- gulp-ejs-mail/email-mockup-2-lg.jpg
+images:
+- https://www.dropbox.com/s/w5vrb8tj1clf1po/email-mockup-2-lg.jpg?dl=1
 tags: [Node.js, Gulp, EJS, JavaScript, Sass, HTML Email, Git]
 client: Frye Art Museum
 website: https://github.com/johnteske/gulp-ejs-mail

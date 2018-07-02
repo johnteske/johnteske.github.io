@@ -7,9 +7,8 @@ roles:
 - Development
 categories:
 - project
-img: Frye-store/store-elephant.jpg
-carousel:
-- Frye-store/triptych-1280.jpg
+images:
+- https://www.dropbox.com/s/teg2qp03dy4tinn/triptych-1280.jpg?dl=1
 tags: Shopify Liquid HTML CSS Git
 client: Frye Art Museum
 website: http://store.fryemuseum.org/

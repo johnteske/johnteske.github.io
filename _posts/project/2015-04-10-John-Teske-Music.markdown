@@ -7,9 +7,8 @@ roles:
 - Development
 categories:
 - project
-img: johnteskemusic/forest.jpg
-carousel:
-- johnteskemusic/triptych-1280.jpg
+images:
+- https://www.dropbox.com/s/jpt3ktjj2ival4v/triptych-1280.jpg?dl=1
 tags: HTML CSS JavaScript PHP Git
 client: John Teske Music
 website: http://johnteskemusic.com/

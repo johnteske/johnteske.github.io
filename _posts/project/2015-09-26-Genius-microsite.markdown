@@ -9,10 +9,8 @@ roles:
 - Information Architecture
 categories:
 - project
-img: Genius/event-page2.jpg
-thumb: thumb02.jpg
-carousel:
-- Genius/triptych-1280.jpg
+images:
+- https://www.dropbox.com/s/xwpwk7sde50hpfj/triptych-1280.jpg?dl=1
 tags: Tumblr jQuery Jekyll Liquid HTML CSS Git
 client: Frye Art Museum
 website: http://genius.fryemuseum.org/

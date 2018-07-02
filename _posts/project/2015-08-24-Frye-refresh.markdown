@@ -9,11 +9,8 @@ roles:
 - Webmaster
 categories:
 - project
-img: Frye/Frye-home.jpg
-#img: Frye/Salon-family.jpg
-thumb: thumb02.jpg
-carousel:
-- Frye/triptych-1280.jpg
+images:
+- https://www.dropbox.com/s/7pe5p1l4fh5g7wl/triptych-1280.jpg?dl=1
 tags: [User Experience, Information Architecture, Responsive, PHP, ExpressionEngine, Sass, jQuery, JavaScript, HTML, CSS, Git]
 client: Frye Art Museum
 website: http://fryemuseum.org/

@@ -7,10 +7,6 @@ roles:
 - Development
 categories:
 - project
-#img: smo/desktop-home.jpg
-#thumb: thumb02.jpg
-#carousel:
-#- smo/smo-triptych.jpg
 tags: HTML CSS JavaScript D3 Angular Node.js Grunt npm Git Nunjucks
 website: https://www.arrays.co/
 ---
