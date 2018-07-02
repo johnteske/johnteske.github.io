@@ -75,6 +75,7 @@ p {
     margin: (1rem * $type-scale) 0;
 }
 
+.image-container + h2,
 ul + h2 {
     margin-top: 1rem * $type-scale * $type-scale;
 }
