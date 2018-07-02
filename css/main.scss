@@ -30,8 +30,22 @@ body {
     padding-bottom: 46.875%;
 
     border: 2px solid $text-color;
-    // background-color: $web-blue;
-    background-size: cover;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 1em;
+        height: 2px;
+        background: $text-color;
+
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 1500ms;
+        animation-name: spin;
+        animation-duration: 1500ms;
+    }
 
     img {
         position: absolute;
@@ -46,6 +60,22 @@ body {
         &.loaded {
             opacity: 1;
         }
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: translate(-50%) rotate(0deg);
+    } to {
+        -webkit-transform: translate(-50%) rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%) rotate(0deg);
+    } to {
+        transform: translate(-50%) rotate(360deg);
     }
 }
 

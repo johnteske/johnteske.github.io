@@ -33,7 +33,7 @@ layout: default
 {% include portfolio-list.html limit=8 %}
 
 <script>
-function deferImageLoading() {
+window.addEventListener('load', function deferImageLoading() {
     var imageElements = document.getElementsByTagName('img');
     var images = [];
 
@@ -53,7 +53,5 @@ function deferImageLoading() {
             images[i].src = src;
         }
     }
-}
-
-window.onload = deferImageLoading;
+});
 </script>
