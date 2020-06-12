@@ -1,7 +1,0 @@
-<ul>
-    {% for project in site.categories['project'] limit:include.limit %}
-    <li>
-        <a href="{{ project.url }}">{{ project.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
