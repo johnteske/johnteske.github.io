@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2.617924rem;
+  color: #222222;
+  background-color: #FDFEFF;
+  font-family: "Roboto Mono", "Courier", monospace;
+  font-size: 18px;
+  line-height: 1.618;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 46.875%;
+  border: 2px solid #222222;
+}
+.image-container:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 1em;
+  height: 2px;
+  background: #222222;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1500ms;
+  animation-name: spin;
+  animation-duration: 1500ms;
+}
+.image-container img {
+  position: absolute;
+  width: 100%;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+  opacity: 0;
+}
+.image-container img.loaded {
+  opacity: 1;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: translate(-50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: translate(-50%) rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%) rotate(360deg);
+  }
+}
+h1, h2, h3, p, ul {
+  max-width: 45rem;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.617924rem;
+}
+
+h2 {
+  font-size: 1.618rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 1.618rem 0;
+}
+
+.image-container + h2,
+ul + h2 {
+  margin-top: 2.617924rem;
+}
+
+.contact-link-list li {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  transition: color 150ms, border-bottom-color 150ms, line-height 150ms;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+  color: #0000EE;
+  border-bottom: 2px solid #0000EE;
+  text-shadow: 1px 1px #FDFEFF, 1px -1px #FDFEFF, -1px 1px #FDFEFF, -1px -1px #FDFEFF;
+  line-height: 1;
+}
+a:hover, a:visited {
+  color: #551A8A;
+  border-bottom-color: #551A8A;
+}
+a:hover {
+  line-height: 1.2;
+}
+
+.site-title {
+  color: #222222;
+  border-bottom: none;
+  font-size: 29.124px;
+  line-height: 1;
+}
+.site-title:hover, .site-title:visited {
+  color: #222222;
+  border-bottom: none;
+  line-height: 1;
+}
+
+footer {
+  margin: 2em 0;
+  padding: 1em 0;
+  border-top: 2px solid #222222;
+}
+
+.tag.active {
+  text-decoration: underline;
+}
+
+header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #222222;
+}
+header p {
+  margin: 0;
+}
+header li {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.pills li {
+  display: inline-block;
+  line-height: 2;
+}
+
+.pill {
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  border: 2px solid #eeeeee;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  text-shadow: none;
+}
+.pill:visited {
+  border-bottom-color: #eeeeee;
+}
+.pill:hover {
+  border-bottom-color: #551A8A;
+}
+
+/*# sourceMappingURL=main.css.map */

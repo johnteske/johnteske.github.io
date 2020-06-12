@@ -1,0 +1,16 @@
+{
+  "title": "John Teske",
+  "description": "Software Engineer and Composer",
+  "baseurl": "",
+
+  "social": [
+    {
+      "title": "Github",
+      "url": "https://github.com/johnteske"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/johndteske"
+    }
+  ]
+}
