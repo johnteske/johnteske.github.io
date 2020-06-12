@@ -9,6 +9,7 @@
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "start": "npm-run-all sass --parallel watch:*",
+    "deploy": "npm run build && gh-pages -d _site -b master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
